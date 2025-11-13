@@ -4,7 +4,7 @@
     {
       "type": "node",
       "request": "attach",
-      "name": "Attach to Node Process",
+      "name": "Attach to auth api",
       "port": 3000,
       "restart": true,
       "skipFiles": ["<node_internals>/**"],

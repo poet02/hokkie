@@ -326,3 +326,15 @@ List of available routes:
 
 
 
+mvp db
+users
+userPayedViewedToViewProperty
+userViewedProperty
+userToProperty 1 user can can have many properties
+properties 1 property can only belong to 1 person
+propertyImages
+
+
+
+nicetohave
+userSearches
