@@ -9,6 +9,7 @@ import { Property } from "./Pages/Property";
 import { AddProperty } from "./Pages/AddProperty";
 import { CircleUserRound, MapPinHouse } from "lucide-react";
 import { SearchPlaces } from "./Pages/SearchPlaces";
+import { Media } from "./Pages/Media";
 
 // ----- Styled Components -----
 const Container = styled.div`
@@ -50,13 +51,12 @@ function TabsLayout() {
   return (
     <Container>
       <Routes>
-        {/* <Route path="/home" element={<Home />} /> */}
+        <Route path="/media" element={<Media />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/properties" element={<Properties />} />
         <Route path="/properties/:id" element={<Property />} />
         <Route path="/add-property" element={<AddProperty />} />
         <Route path="/search-places" element={<SearchPlaces />} />
-
       </Routes>
 
       {showBottomTabs && (

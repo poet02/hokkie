@@ -74,7 +74,7 @@ export function Profile() {
     {
       title: "Media",
       icon: <Camera />,
-      onClick: () => console.log('Media clicked'),
+      onClick: () => navigate("/media"),
       description: "Manage photos and videos",
     },
     // {
