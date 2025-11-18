@@ -14,8 +14,8 @@ export default defineConfig({
     },
 
     manifest: {
-      name: 'hokkie-react-fe',
-      short_name: 'hokkie-react-fe',
+      name: 'livi-react-fe',
+      short_name: 'livi-react-fe',
       description: 'frontend app',
       theme_color: '#ffffff',
     },

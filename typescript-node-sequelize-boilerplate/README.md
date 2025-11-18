@@ -323,18 +323,63 @@ List of available routes:
 - [microsoft/typescript-node-starter](https://github.com/microsoft/TypeScript-Node-Starter)
 
 
-
-
-
 mvp db
 users
-userPayedViewedToViewProperty
-userViewedProperty
-userToProperty 1 user can can have many properties
+tenantPayedViewedToViewProperty
+tenantViewedProperty
+ownerToProperty 1 user can can have many properties
 properties 1 property can only belong to 1 person
 propertyImages
-
+tenantPropertyReview
+propertyRentingPeriods
 
 
 nicetohave
 userSearches
+
+
+core features BE
+proccessing images
+be able to query geospatial data
+apis
+login
+registration
+owner upload property with camera images.
+tenant location search for properties using an address or lat/lng. (should we exclude properties they own), return should be list of locations in that area radius, that are vacant and within their budget. maybe we max this to 20
+view property api
+payed to contact owner
+mark poperty as rented
+mark poperty as vacant
+
+message *
+
+
+
+core features FE
+registration page
+tenants should be able to search for location and use a radius to see list of properties
+tenant property details page
+owner property details page
+home page, 2 button tab, looking to rent(tenants), rent out (owner)
+tenant page to see viewed(10-15 max) and payed properties (all).
+tenants can click and view property, property contact is hidden
+if tenenant is interested in contacting owner they can click pay to view contact details.
+once contact is established, the can call and message via the app. (out of scope?)
+pick up device location
+be able to map the properties on the map
+be able to take pictures from camera.
+the first time a tenant is there they can rate the property
+Owners can upload/edit/delete proerties, must use device location as property location when uploading pics,
+
+
+
+BE architecture
+for BE postgres, sequelize, express and type script: https://github.com/nabadeep25/typescript-node-sequelize-boilerplate?tab=readme-ov-file .
+
+for DB using a docker image (need to update the current one, its doing to much)
+for hosting db: aws ecs and rds
+to capture images will use
+to store images will use: aws S3
+For maps will can use mapbox or google maps, i reccomend mapbox
+For sms and calls will use twilio
+For FE will use react + vite + pwa boiler template
